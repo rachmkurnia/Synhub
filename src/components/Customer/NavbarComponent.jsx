@@ -1,7 +1,7 @@
 // import component react bootstrap
 import { Container, Nav, Navbar, NavDropdown, Dropdown } from "react-bootstrap";
 
-import logo from "../assets/logo.png"
+import logo from "../../assets/logo.png"
 
 import { Link } from "react-router-dom";
 
@@ -17,7 +17,7 @@ const NavbarComponent = ({ isLoggedIn }) => {
                     <Navbar.Brand href="/"><img src={logo} alt="logo" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="ms-auto d-flex align-items-center" >
+                        <Nav className="d-flex align-items-center" >
 
                             {isLoggedIn ? (
                                 <Nav.Link href="/home">Beranda</Nav.Link>

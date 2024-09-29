@@ -31,7 +31,7 @@ const FooterComponent = () => {
                             <h5>Kontak</h5>
                             <p>Jalan Inspektur Sudirman, No. 1234, Sukajadi, Palembang, Sumatera Selatan, 30118</p>
                             <p>09:00 Pagi s/d 20.00 Malam</p>
-                            <p>&#128222: 08123456789</p>
+                            <p>&#128222; 08123456789</p>
                         </Col>
                     </Row>
                 </Container>
