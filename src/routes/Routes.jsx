@@ -13,9 +13,17 @@ import SuccessPage from "../pages/Customer/SuccessPage";
 import OrderPage from "../pages/Customer/OrderPage";
 
 import DashboardPage from "../pages/Dashboard/DashboardPage";
+
 import UserPage from "../pages/Dashboard/users/UserPage";
 import CreateUserPage from "../pages/Dashboard/users/CreateUserPage";
 import EditUserPage from "../pages/Dashboard/users/EditUserPage";
+
+import FacilitysPage from "../pages/Dashboard/facilitys/FacilitysPage";
+import CreateFacilitysPage from "../pages/Dashboard/facilitys/CreateFacilitysPage";
+import EditFacilitysPage from "../pages/Dashboard/facilitys/EditFacilitysPage";
+import BannersPage from "../pages/Dashboard/banners/BannersPage";
+import CreateBannersPage from "../pages/Dashboard/banners/CreateBannersPage";
+import EditBannersPage from "../pages/Dashboard/banners/EditBannersPage";
 
 // dashboard
 function RouteIndex() {
@@ -32,13 +40,22 @@ function RouteIndex() {
         <Route path="/cospace" Component={CospacePage} />
         <Route path="/payment" Component={PaymentPage} />
         <Route path="/success" Component={SuccessPage} />
-        
         <Route path="/order" Component={OrderPage} />
+
         {/* ===== routes dashboard ===== */}
         <Route path="/admin/dashboard" element={<DashboardPage />} />
+
         <Route path="/admin/user" element={<UserPage />} />
         <Route path="/admin/user/new" element={<CreateUserPage />} />
         <Route path="/admin/user/:id" element={<EditUserPage />} />
+
+        <Route path="/admin/facilitys" element={<FacilitysPage />} />
+        <Route path="/admin/facilitys/new" element={<CreateFacilitysPage />} />
+        <Route path="/admin/facilitys/:id" element={<EditFacilitysPage />} />
+
+        <Route path="/admin/banners" element={<BannersPage />} />
+        <Route path="/admin/banners/new" element={<CreateBannersPage />} />
+        <Route path="/admin/banners/:id" element={<EditBannersPage />} />
       </Routes>
     </>
   );

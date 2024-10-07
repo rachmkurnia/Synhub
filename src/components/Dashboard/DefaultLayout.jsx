@@ -16,10 +16,10 @@ const DefaultLayout = ({ children }) => {
           <Nav.Link className="text-dark" href="">
             Bank
           </Nav.Link>
-          <Nav.Link className="text-dark" href="">
+          <Nav.Link className="text-dark" href="/admin/banners">
             Banner
           </Nav.Link>
-          <Nav.Link className="text-dark" href="">
+          <Nav.Link className="text-dark" href="/admin/facilitys">
             Facility
           </Nav.Link>
           <Nav.Link className="text-dark" href="/admin/user">
