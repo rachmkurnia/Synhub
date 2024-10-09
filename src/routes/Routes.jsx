@@ -24,6 +24,9 @@ import EditFacilitysPage from "../pages/Dashboard/facilitys/EditFacilitysPage";
 import BannersPage from "../pages/Dashboard/banners/BannersPage";
 import CreateBannersPage from "../pages/Dashboard/banners/CreateBannersPage";
 import EditBannersPage from "../pages/Dashboard/banners/EditBannersPage";
+import BanksPage from "../pages/Dashboard/banks/BanksPage";
+import CreateBanksPage from "../pages/Dashboard/banks/CreateBanksPage";
+import EditBanksPage from "../pages/Dashboard/banks/EditBanksPage";
 
 // dashboard
 function RouteIndex() {
@@ -56,6 +59,12 @@ function RouteIndex() {
         <Route path="/admin/banners" element={<BannersPage />} />
         <Route path="/admin/banners/new" element={<CreateBannersPage />} />
         <Route path="/admin/banners/:id" element={<EditBannersPage />} />
+
+        <Route path="/admin/banks" element={<BanksPage />} />
+        <Route path="/admin/banks/new" element={<CreateBanksPage />} />
+        <Route path="/admin/banks/:id" element={<EditBanksPage />} />
+
+
       </Routes>
     </>
   );
