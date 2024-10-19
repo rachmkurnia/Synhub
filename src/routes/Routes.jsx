@@ -27,6 +27,7 @@ import EditBannersPage from "../pages/Dashboard/banners/EditBannersPage";
 import BanksPage from "../pages/Dashboard/banks/BanksPage";
 import CreateBanksPage from "../pages/Dashboard/banks/CreateBanksPage";
 import EditBanksPage from "../pages/Dashboard/banks/EditBanksPage";
+import RuanganPage from "../pages/Customer/RuanganPage";
 
 // dashboard
 function RouteIndex() {
@@ -44,6 +45,7 @@ function RouteIndex() {
         <Route path="/payment" Component={PaymentPage} />
         <Route path="/success" Component={SuccessPage} />
         <Route path="/order" Component={OrderPage} />
+        <Route path="/ruangan/:slug"  Component={RuanganPage} />
 
         {/* ===== routes dashboard ===== */}
         <Route path="/admin/dashboard" element={<DashboardPage />} />
@@ -63,6 +65,9 @@ function RouteIndex() {
         <Route path="/admin/banks" element={<BanksPage />} />
         <Route path="/admin/banks/new" element={<CreateBanksPage />} />
         <Route path="/admin/banks/:id" element={<EditBanksPage />} />
+
+        
+
 
 
       </Routes>
